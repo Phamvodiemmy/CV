@@ -1,0 +1,534 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #d5cdd2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Chiều cao tối thiểu = chiều cao màn hình */
+
+
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+}
+
+.container
+{
+
+    position: relative;
+    background-color:#fff;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+   
+}
+.container .left_side {
+    margin:20px;
+    border-radius: 20px;
+    position: relative;
+    background: #f7a6d4;
+    padding: 30px 14px;
+
+   
+}
+.container .right_side
+{
+    position: relative;
+    background: #fff;
+    padding: 40px 40px 40px 20px;
+}
+
+.profileText
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.2)  ;
+
+}
+.profileText .imgcv
+{
+    position: relative;
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    border:solid #fff 10px  ;
+    overflow: hidden;
+}
+.profileText .imgcv img
+{
+    position:absolute;
+    top:0;
+    left:0;
+    right:100%;
+    height:100%;
+    object-fit: over;
+}
+.profileText h2
+{
+    color: #fff;
+    font-size:1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600px;
+    line-height: 1.4em;
+}
+.profileText h2 span
+{
+    color: #fff;
+    font-size: 0.7em;
+}
+.ContactInfo h3
+{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size:1.1em;
+    text-transform: uppercase;
+}
+.ContactInfo ul
+{
+    position: relative;
+    list-style: none;
+}
+.ContactInfo ul li
+{
+    position: relative;
+    list-style-type: style none;
+    margin: 5px 0;
+    cursor: pointer;
+}
+.ContactInfo ul li .icon
+{
+    display: inline-block;
+    width: 20px;
+    font-size: 16px;
+    color: #fff;
+}
+.ContactInfo ul li .text
+{
+    font-size: 16px;
+    color: #fff;
+}
+.Education h3
+{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.Education ul
+{
+    position: relative;
+    list-style: none;
+}
+.Education ul li
+{
+    position: relative;
+    list-style-type: style none;
+    margin: 5px 0;
+    cursor: pointer;
+}
+.Education ul li .icon
+{
+    display: inline-block;
+    width: 20px;
+    font-size: 16px;
+    color: #fff;
+}
+.Education ul li .text
+{
+    font-size: 16px;
+    color: #fff;
+}
+.Education ul li .year
+{
+    font-size: 16px;
+    color: #fff;
+}
+.Language h3
+{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.Language ul
+{
+    position: relative;
+    list-style: none;
+}
+.Language ul li
+{
+    position: relative;
+    list-style-type: style none;
+    margin: 5px 0;
+    cursor: pointer;
+}
+.Language ul li .text
+{
+    font-size: 16px;
+    color: #fff;
+}
+.Language .percent
+{
+    padding-top: 10px;
+    position: relative;
+    width: 100%;
+    height:6px;
+    background-color: #fff;
+    border-radius: 20px;
+    display: block;
+    margin-top: 5px;
+}
+.Language .percent div
+{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    height: 100%;
+    border-radius: 20px 0   0 20px   ;
+    background-color: rgb(203, 197, 197)
+
+}
+.Experience h3
+{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+}
+.Experience ul
+{
+    position: relative;
+    list-style: none;
+}
+.Experience ul li
+{
+    position: relative;
+    list-style-type: style none;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.Experience ul li .year
+{
+    font-size: 16px;
+    color: #fff;
+}
+.Experience ul li .text
+{
+    padding-top: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+.Experience ul li .position
+{
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #fff;
+}
+
+.right_side .about .title2
+{
+    text-transform: uppercase;
+    padding:20px 0px;
+    border-bottom: 1px solid rgba(0,0,0,0.4)  ;
+}
+.right_side .about p
+{
+    margin: 10px;
+    padding-top: 20px;
+    text-align: justify;
+    font-size: 16px;;
+    word-spacing: 2px;
+}
+.skill .title
+{
+    text-transform: uppercase;
+    padding:20px 0px;
+    border-bottom: 1px solid rgba(0,0,0,0.4) ;
+}
+.skill ul
+{
+    padding-top: 10px;
+    position: relative;
+    list-style: none;
+}
+.skill ul li {
+    padding: 5px 10px;
+    display: flex;
+    align-items: center; 
+    margin: 16px 0;
+    list-style: none;
+}
+
+.skill ul li .skill-name {
+
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 20%; 
+    color: #333; 
+}
+
+.skill .percent {
+    flex-grow: 1; 
+    height: 15px;
+    background-color: rgb(203, 197, 197); 
+    margin-left: 10px; 
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.skill .percent div {
+    height: 100%;
+    background-color: #f7a6d4;
+}
+.hobbies .title
+{
+    text-transform: uppercase;
+    padding:20px 0px;
+    border-bottom: 1px solid rgba(0,0,0,0.4) ;
+}
+.hobbies .title {
+    text-transform: uppercase;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.hobbies ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0px;
+    margin: 30px 0;
+    list-style-type: none;
+}
+
+.hobbies ul li {
+    text-align: center;
+}
+
+.hobbies ul li span {
+    display: block;
+    font-size: 30px;
+    margin-bottom: 10px;
+    background-color: #f7a6d4;
+    border-radius: 50%; 
+    padding: px; 
+    width: 80px; 
+    height: 80px; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.hobbies ul li p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+
+
+/* Thêm hiệu ứng hover cho phần About Me */
+.right_side .about {
+    position: relative;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    z-index: 1;
+}
+
+.right_side .about:hover {
+    transform: scale(1.1); /* Phóng to phần About Me */
+    z-index: 10; /* Đưa phần About Me lên trên cùng */
+}
+
+/* Làm mờ các phần còn lại khi hover vào About Me */
+.right_side:hover .about ~ * {
+    opacity: 0.5; /* Làm mờ các phần không được hover */
+    transition: opacity 0.3s ease;
+}
+
+/* Đảm bảo phần được hover vẫn giữ nguyên độ trong suốt */
+.right_side .about:hover {
+    opacity: 1 !important;
+}
+/* Thêm hiệu ứng hover cho phần Programming Skills */
+.skill {
+    position: relative;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    z-index: 1;
+}
+
+.skill:hover {
+    transform: scale(1.1); /* Phóng to phần Programming Skills */
+    z-index: 10; /* Đưa phần Programming Skills lên trên cùng */
+}
+
+/* Làm mờ các phần còn lại khi hover vào Programming Skills */
+.right_side:hover .skill ~ * {
+    opacity: 0.5; /* Làm mờ các phần không được hover */
+    transition: opacity 0.3s ease;
+}
+
+/* Đảm bảo phần được hover vẫn giữ nguyên độ trong suốt */
+.skill:hover {
+    opacity: 1 !important;
+}
+/* Hiệu ứng cho các thanh phần trăm trong Programming Skills */
+.skill .percent div {
+    position: relative;
+    background-color: #f7a6d4; /* Màu xanh cho thanh tiến trình */
+    height: 100%;
+    transition: width 0.3s ease;
+    width: var(--percent, 0); /* Sử dụng biến CSS để đặt giá trị phần trăm */
+}
+
+.skill .percent {
+    position: relative;
+    background-color: #ddd; /* Màu nền cho thanh tiến trình */
+    height: 20px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* Thêm hiệu ứng hover cho phần About Me */
+.right_side .about {
+    position: relative;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    z-index: 1;
+}
+
+.right_side .about:hover {
+    transform: scale(1.1); /* Phóng to phần About Me */
+    z-index: 10; /* Đưa phần About Me lên trên cùng */
+}
+
+/* Làm mờ các phần còn lại khi hover vào About Me, nhưng không làm mờ phần About Me */
+.right_side:hover .about ~ * {
+    opacity: 0.5; /* Làm mờ các phần không được hover */
+    transition: opacity 0.3s ease;
+}
+
+/* Đảm bảo phần được hover vẫn giữ nguyên độ trong suốt */
+.right_side .about:hover {
+    opacity: 1 !important;
+}
+
+/* Thêm hiệu ứng hover cho phần Programming Skills */
+.skill {
+    position: relative;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    z-index: 1;
+}
+
+.skill:hover {
+    transform: scale(1.1); /* Phóng to phần Programming Skills */
+    z-index: 10; /* Đưa phần Programming Skills lên trên cùng */
+}
+
+/* Làm mờ các phần còn lại khi hover vào Programming Skills */
+.right_side:hover .skill ~ * {
+    opacity: 0.5; /* Làm mờ các phần không được hover */
+    transition: opacity 0.3s ease;
+}
+
+/* Đảm bảo phần được hover vẫn giữ nguyên độ trong suốt */
+.skill:hover {
+    opacity: 1 !important;
+}
+
+/* Hiệu ứng cho các thanh phần trăm trong Programming Skills */
+.skill .percent div {
+    position: relative;
+    background-color: #f7a6d4; /* Màu xanh cho thanh tiến trình */
+    height: 100%;
+    transition: width 0.3s ease;
+    width: var(--percent, 0); /* Sử dụng biến CSS để đặt giá trị phần trăm */
+}
+
+.skill .percent {
+    position: relative;
+    background-color: #ddd; /* Màu nền cho thanh tiến trình */
+    height: 20px;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+
+/* Thêm hiệu ứng hover cho phần Hobbies */
+.hobbies {
+    position: relative;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    z-index: 1;
+}
+
+.hobbies:hover {
+    transform: scale(1.1); /* Phóng to phần Hobbies */
+    z-index: 10; /* Đưa phần Hobbies lên trên cùng */
+}
+
+/* Làm mờ các phần còn lại khi hover vào Hobbies */
+.right_side:hover .hobbies ~ * {
+    opacity: 0.5; /* Làm mờ các phần không được hover */
+    transition: opacity 0.3s ease;
+}
+
+/* Đảm bảo phần được hover vẫn giữ nguyên độ trong suốt */
+.hobbies:hover {
+    opacity: 1 !important;
+}
+
+/* Hiệu ứng cho các icon hình tròn trong Hobbies */
+.hobbies .circle {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #4caf50; /* Màu xanh cho icon */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.hobbies:hover .circle {
+    transform: scale(1.2); /* Nổi lên khi hover */
+}
+
+/* Định dạng cho màn hình lớn */
+.container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .left-side {
+    width: 50%;
+  }
+  
+  .right-side {
+    width: 50%;
+  }
+  
+  /* Định dạng cho màn hình nhỏ hơn */
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .left-side, .right-side {
+      width: 100%;
+    }
+  }
+  
